@@ -12,6 +12,10 @@ export STREAM_KEY=<YOUR_TWITCH_KEY>
 make run
 ```
 
+## License
+
+MIT
+
 ## References
 
 ```
