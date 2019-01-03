@@ -1,0 +1,17 @@
+inflect==2.1.0
+irc==17.0
+jaraco.classes==2.0
+jaraco.collections==2.0
+jaraco.functools==2.0
+jaraco.itertools==4.0.0
+jaraco.logging==2.0
+jaraco.stream==2.0
+jaraco.text==2.0
+more-itertools==5.0.0
+parse==1.9.0
+Pillow==5.4.0
+pyfiglet==0.8.post0
+python-dotenv==0.10.1
+pytz==2018.7
+six==1.12.0
+tempora==1.14

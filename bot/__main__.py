@@ -8,8 +8,8 @@ from client import PixelFlutBot
 # Get the config and start the bot...
 def main():
     server = {
-        'host': os.environ['HOST'],
-        'port': int(os.environ['PORT']),
+        'host': os.environ['IRC_HOST'],
+        'port': int(os.environ['IRC_PORT']),
         'password': os.environ['OAUTH_TOKEN'],
     }
     pixelflut = {

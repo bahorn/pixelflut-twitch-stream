@@ -15,4 +15,5 @@ unclutter -idle 0 & \
     ffmpeg -f x11grab -video_size $INRES -i $DISPLAY -s "$INRES" -r "$FPS" -f flv -ac 2 \
     -vcodec libx264 -g $GOP -keyint_min $GOPMIN -b:v $CBR -minrate $CBR -maxrate $CBR -pix_fmt yuv420p\
     -s $OUTRES -preset $QUALITY -tune film -acodec libmp3lame -threads $THREADS -strict normal \
-    -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/$STREAM_KEY"
+    -bufsize $CBR "rtmp://$SERVER.twitch.tv/app/$STREAM_KEY" & \
+    python3 /bot
