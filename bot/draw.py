@@ -34,7 +34,10 @@ class PixelFlutDrawer:
     # Draw an image from the library
     def image(self, x, y, image, scale=1):
         # go though each pixel and use the draw function
-        im = Image.open(image)
+        try:
+            im = Image.open(image)
+        except:
+            return
         width, height = im.size
         rgb_im = im.convert('RGB')
         for ix in range(0, width):

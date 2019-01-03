@@ -88,6 +88,8 @@ class PixelFlutBot(irc.bot.SingleServerIRCBot):
                 y = int(split[2])
                 if split[3] in images.approved:
                     image = images.approved[split[3]]
+                else:
+                    return usage.image
             except:
                 return usage.image
             if len(split) == 5:
